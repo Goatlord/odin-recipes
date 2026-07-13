@@ -1,20 +1,94 @@
-main {
+* {
+    outline: 2px solid red;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #70d6ebd8;
 }
 
-h1 {
+
+body {
+    background-color: #70d6ebd8;
+    max-width: 100%;
+
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 2rem;
+    display: flex;
+    background-color: #80661075;
+    height: 100px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    background-color: #c7e70f;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    list-style-type: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 20px 25px;
+}
+
+.dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu {
+    display: block;
+
+}
+
+
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.title {
     text-align: center;
     color: #000000;
-    font-size: 3rem;
-    margin-top: 2rem;
+    margin: 2rem auto;
+    font-size: 1.7rem;
+    background-color: rgb(108, 253, 171);
+    border-radius: 15px;
+    padding: 15px;
+    width: 80%;
 }
 
 #apple-tree {
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto;
     max-width: 100%;
     height: 400px;
 }
